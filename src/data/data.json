@@ -1,0 +1,74 @@
+{
+    "id": "1",
+    "name": "root",
+    "isOpen": false,
+    "isFolder": true,
+    "items": [
+        {
+            "id": "2",
+            "name": "public",
+            "isOpen": false,
+            "isFolder": true,
+            "items": [ 
+                {
+                    "id": "3",
+                    "name": "src",
+                    "isOpen": false,
+                    "isFolder": true,
+                    "items": [
+                        {
+                            "id": "4",
+                            "name": "project.js",
+                            "isOpen": false,
+                            "isFolder": false,
+                            "items": []
+                        }
+                    ]
+                },
+                {
+                        "id": "5",
+                        "name": "data.json",
+                        "isOpen": false,
+                        "isFolder": false,
+                        "items": []
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "test.js",
+            "isOpen": false,
+            "isFolder": false,
+            "items": []
+        },
+        {
+            "id": "7",
+            "name": "utils",
+            "isOpen": false,
+            "isFolder": true,
+            "items": [  {
+                "id": "3",
+                "name": "src",
+                "isOpen": false,
+                "isFolder": true,
+                "items": [
+                    {
+                        "id": "8",
+                        "name": "project.js",
+                        "isOpen": false,
+                        "isFolder": false,
+                        "items": []
+                    }
+                ]
+            },
+            {
+                    "id": "9",
+                    "name": "data.json",
+                    "isOpen": false,
+                    "isFolder": false,
+                    "items": []
+            }]
+        }
+    ]
+
+}

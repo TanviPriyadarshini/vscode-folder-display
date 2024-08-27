@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import data from './data/data.json'
+import Folder from './components/Folder';
+import { useState } from 'react';
+import useTreeTraversal from './hooks/useTreeTraversal';
 
-function App() {
+const App = () => {
+  const [dataTree, setDataTree] = useState(data);
+  
+  const {insertTreeNode} = useTreeTraversal()
+  
+  const handleInserNewNode = (folderToInsertIn, newNodeName, isFolder) => {
+    let newTree = insertTreeNode(dataTree, folderToInsertIn, newNodeName, isFolder)
+    setDataTree(newTree)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Folder handleInsertNewNode={handleInserNewNode} folder={dataTree}/>
     </div>
-  );
+  )
 }
+
 
 export default App;
